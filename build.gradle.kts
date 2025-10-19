@@ -23,9 +23,6 @@ dependencies {
 }
 
 val targetJavaVersion = 21
-tasks.build {
-    dependsOn("shadowJar")
-}
 
 tasks.processResources {
     val props = mapOf("version" to version)
