@@ -5,10 +5,10 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.event.player.PlayerEvent;
 import org.jetbrains.annotations.NotNull;
 
-public class PlayerInventoryOpenEvent extends PlayerEvent {
+public class PlayerOpenBackpackEvent extends PlayerEvent {
     private static final HandlerList HANDLER_LIST = new HandlerList();
 
-    public PlayerInventoryOpenEvent(Player player) {
+    public PlayerOpenBackpackEvent(Player player) {
         super(player);
     }
 

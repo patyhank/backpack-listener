@@ -27,7 +27,7 @@ import com.github.retrooper.packetevents.wrapper.play.server.*;
 import com.google.common.collect.Maps;
 import io.github.retrooper.packetevents.util.SpigotReflectionUtil;
 import it.unimi.dsi.fastutil.Pair;
-import net.patyhank.bplugin.event.PlayerInventoryOpenEvent;
+import net.patyhank.bplugin.event.PlayerOpenBackpackEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -63,7 +63,7 @@ public class InventoryListener implements PacketListener {
             if (removeBarrierRecipe(event.getPlayer())) {
                 fallbackCursor(event.getPlayer());
             }
-            Bukkit.getScheduler().runTask(BackpackListenerPlugin.instance, () -> Bukkit.getPluginManager().callEvent(new PlayerInventoryOpenEvent(event.getPlayer())));
+            Bukkit.getScheduler().runTask(BackpackListenerPlugin.instance, () -> Bukkit.getPluginManager().callEvent(new PlayerOpenBackpackEvent(event.getPlayer())));
             event.setCancelled(true);
         }
         if (event.getPacketType() == PacketType.Play.Client.SET_RECIPE_BOOK_STATE) {
