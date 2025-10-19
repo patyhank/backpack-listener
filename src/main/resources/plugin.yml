@@ -1,0 +1,5 @@
+name: open-inventory
+version: '0.0.1-SNAPSHOT'
+main: net.patyhank.bplugin.BackpackListenerPlugin
+api-version: '1.21'
+depends: [PacketEvents]

@@ -1,0 +1,12 @@
+name: backpack-listener
+version: $version
+main: net.patyhank.bplugin.BackpackListenerPlugin
+description: Backpack Listener Plugin
+api-version: '1.21.8'
+loader: net.patyhank.bplugin.BackpackListenerPluginLoader
+dependencies:
+  server:
+    packetevents:
+      load: BEFORE
+      required: true
+      join-classpath: true
