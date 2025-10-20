@@ -1,5 +1,14 @@
 # Backpack Listener API
 
+# License
+
+**All rights reserved.**
+
+⚠️ 授權聲明：**本插件 API 禁止轉發、重新分發或宣稱為自行開發。**
+
+⚠️ Important Notice: **Redistribution, reposting, or claiming this plugin API as self-developed is strictly prohibited.**
+
+
 (english version below)
 
 這是全網第一個提供玩家開啟背包事件功能的 Paper 插件 API。

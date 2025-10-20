@@ -8,13 +8,12 @@ group = "net.patyhank"
 version = "0.0.1-SNAPSHOT"
 
 repositories {
-    mavenCentral()
-    maven { url = uri("https://repo.codemc.io/repository/maven-releases/") }
-    maven { url = uri("https://repo.codemc.io/repository/maven-snapshots/") }
-
     maven("https://repo.papermc.io/repository/maven-public/") {
         name = "papermc-repo"
     }
+    maven { url = uri("https://repo.codemc.io/repository/maven-releases/") }
+    maven { url = uri("https://repo.codemc.io/repository/maven-snapshots/") }
+    mavenCentral()
 }
 
 dependencies {
